@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+#topMenu ul > li.on > a {
+			color: #35c5f0;
+		}
+.border { border: 1px solid red; }
+.contetn_inner {
+	display : flex;
+}
+.category {
+	margin-left: 250px; 
+	min-height: 900px;
+	width: 270px;
+}
+.category > h2 {   /* 카테고리(depth:0) (ex) 가구 크리스마스 겨울용품 ... */
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: 700;
+	color: black;
+}
+.category > h2:first-child {  /* 카테고리(depth:0) 중에 현재 카테고리 = 항상 맨 위에 있음 */
+	margin-top: 40px;
+	margin-bottom: 27px;
+}
+.category .depth1 > div, 
+.category .depth2 > div,
+.category .depth3 > div {   /* 카테고리(depth:1) (ex) O!SelectShop, 침대, ... */
+	font-size: 13px;
+	line-height: 23px;
+	margin-bottom: 10px;
+	position: relative;
+}
+.category .depth1 { width: 155px; }
+.category .depth2 { width: 145px; margin-left: 10px; }
+.category .depth3 { width: 135px; margin-left: 20px; } 
+.category .depth1 > div.expandable::before,
+.category .depth2 > div.expandable::before {  /* 카테고리(depth:1) 중에 펼칠 수 있는 것은 'v' 표시 */
+	content: ' ';
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	top: 6px;
+	right: 0;
+	transition: transform .1s;
+}
+.category .depth1 > div.expandable::before { background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon" width="12" height="12" fill="currentColor" viewBox="0 0 12 12" preserveAspectRatio="xMidYMid meet"><path d="M6.07 7.56l4.39-4.55.87.87-5.25 5.45L.67 3.9 1.53 3z"></path></svg>'); }
+.category .depth2 > div.expandable::before { background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon" width="12" height="12" fill="rgb(189,189,189)" viewBox="0 0 12 12" preserveAspectRatio="xMidYMid meet"><path d="M6.07 7.56l4.39-4.55.87.87-5.25 5.45L.67 3.9 1.53 3z"></path></svg>'); }
+.category .expandable.rotate180::before {  /* 'v' 표시가 180도 회전 */
+	transform: rotate(180deg);
+}
+.depth2, .depth3 { display: none; }
+.separator { 
+	margin-top: 15px;
+	margin-bottom: 30px;
+	border-top: 1px solid #dbdbdb;
+	width: 155px; 
+ }

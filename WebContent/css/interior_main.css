@@ -1,0 +1,1095 @@
+@charset "UTF-8";
+/****************모달창**********************/
+.ja_modal_backgroound {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 1300;
+	background-color: rgba(33, 38, 41, 0.5);
+}
+
+.ja_modal_backgroound::before{
+	content: "";
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ja_modal_box {
+	height: 84%;
+	vertical-align: middle;
+	width: 500px;
+	border-radius: 8px;
+	display: inline-flex;
+	flex-direction: column;
+	color: rgb(47, 52, 56);
+	background-color: rgb(255, 255, 255);
+}
+
+.ja_modal_header {
+	padding: 16px 16px 10px;
+	line-height: 0;
+}
+
+.ja_modal_text {
+	font-size: 20px;
+	line-height: 28px;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 700;
+	text-align: center;
+	margin-left: 24px;
+	margin-right: 10px;
+	white-space: pre-line;
+	width: 400px;
+}
+
+.ja_modal_header > button {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+	font: inherit;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+}
+
+.ja_modal_header > button > span {
+	display: inline-block;
+	font-size: 24px;
+	line-height: 1;
+	color: rgb(47, 52, 56);
+	font-family: OhouseIcon;
+	vertical-align: top;
+}
+
+.ja_modal_header > button > span::before{
+	content: "\e9ba";
+}
+
+.ja_modal_content {
+	font-size: 16px;
+	line-height: 24px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	word-wrap: break-all;
+	overflow-y: auto;
+	padding-bottom: 9px;
+}
+
+.ja_modal_content_inner {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(255, 255, 255);
+	padding: 0px 16px;
+	height: 100%;
+}
+
+.ja_madal_select {
+	padding: 20px 0px 10px;
+}
+
+.ja_madal_select_box {
+	width: 100%;
+}
+
+.ja_madal_select_combo {
+	width: 100%;
+}
+
+.ja_madal_select_ul {
+	margin-top: 10px;
+	border-radius: 4px;
+	overflow-x: hidden;
+	box-shadow: rgba(63, 71, 77, 0.05)0px 2px 5px;
+	position: absolute;
+	width: 468px;
+}
+
+.ja_madal_select_inner {
+	display: flex;
+	line-height: 0;
+	border: 1px solid rgb(234, 237, 239);
+	border-radius: 4px;
+	height: 40px;
+	padding: 0px 14px;
+	width: 100%;
+	appearance: none; /*브라우저가 뿌려주는 해당 요소의 기본구성요소 일부를 숨김*/	
+}
+
+.ja_madal_select_inner:hover {
+	background-color: rgb(247, 249, 250);
+}
+
+.ja_madal_select_span {
+	font-size: 24px;
+	line-height: 1.7;
+	color: rgb(47, 52, 56);
+	font-family: OhouseIcon;
+	vertical-align: top;
+}
+
+.ja_madal_select_span::before{
+	content: "\ea4d";
+}
+
+.ja_madal_select_input {
+	margin: 0px;
+	border: none;
+	background: none;
+	height: 100%;
+	color: rgb(47, 52, 56);
+	font-size: 17px;
+	line-height: 24px;
+	width: 414px;
+	padding: 0px 6px;
+	vertical-align: middle;
+	outline: none;
+}
+
+.ja_madal_select_input::placeholder{
+	color: #bdbdbd;
+}
+
+.ja_madal_select_input.on {
+	border: 1px solid rgb(53, 192, 240);
+}
+
+.ja_madal_ex {
+	margin-top: 10px;
+	color: rgb(47, 52, 56);
+	text-align: left;
+	display: none;
+}
+
+.ja_madal_ex > p {
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+.ja_madal_ex > p > span {
+	color: rgb(0, 184, 240);
+}
+
+.ja_madal_ex > ul {
+	list-style-type: disc;
+	font-size: 14px;
+	line-height: 18px;
+	padding-left: 20px;
+}
+
+.ja_madal_ex > ul > li {
+	margin-bottom: 8px;
+	list-style: inside;
+}
+
+.ja_madal_ex > ul > li > span {
+	color: rgb(130, 140, 148);
+}
+
+
+
+
+
+
+
+
+
+
+.ja_madal_select_after_box {
+	margin: 0px -16px;
+	border-top: 1px solid rgb(234, 237, 239);
+	overflow-y: auto;
+
+}
+
+.ja_madal_select_after_notice {
+	width: 100%;
+	padding: 20px 16px;
+	background-color: rgb(247, 249, 250);
+	text-align: start;	
+}
+
+.ja_madal_select_after_notice > h2 {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: bold;
+	color: rgb(47, 52, 56);
+	margin-bottom: 6px;
+}
+
+.ja_madal_select_after_notice > div {
+	font-size: 14px;
+	line-height: 20px;
+	color: rgba(130, 140, 148);
+	word-break: keep-all;
+	letter-spacing: 0.3px;
+}
+
+.ja_madal_select_text {
+	padding: 16px;
+	color: rgb(47, 52, 56);
+	font-size: 16px;
+	line-height: 20px;
+	transition: background-color 0.2s ease-in-out 0s;
+	text-align: start;
+}
+
+.ja_madal_select_text:hover {
+	background-color: rgb(247, 249, 250);
+}
+
+.ja_madal_select_text > button {
+	text-align: left;
+	font-size: 16px;
+	line-height: 24px;
+	color: rgb(47, 52, 56);
+	word-break: keep-all;
+	background: none;
+	border: none;
+	padding: 0px;
+	
+}
+
+.ja_madal_select_text > button > span {
+	color: rgb(53, 197, 240);
+	font-weight: bold;
+	margin-right: 4px;
+}
+
+.ja_adress_detail_box {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 10px;
+}
+
+.ja_adress_detail_local {
+	margin-right: 6px;
+}
+
+.ja_adress_detail_local_adress {
+	padding-right: 8px;
+	margin-top: -1px;
+}
+
+.ja_adress_detail_local_adress > button {
+	color: rgb(130, 140, 148);
+    text-align: left;
+    font-size: 14px;
+    line-height: 18px;
+	background: none;
+	border: none;
+}
+
+.ja_madal_hr {
+	padding: 0px;
+    height: 1px;
+    border: none;
+    background-color: rgb(234, 237, 239);
+    margin: 0px 16px;
+}
+
+.ja_madal_paging_box {
+	margin: 20px 0px 36px;
+	text-align: center;
+}
+
+
+.ja_madal_paging_btn {
+	font-size: 16px;
+    line-height: 28px;
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    border: 0px;
+    margin-right: 10px;
+    padding: 0px;
+    font-weight: bold;
+    transition: background-color 0.2s ease 0s;
+    background-color: rgb(255, 255, 255);
+    color: rgb(47, 52, 56);	
+}
+
+.ja_madal_paging_btn.on {
+	background-color: rgb(53, 197, 240);
+    color: rgb(255, 255, 255);	
+}
+
+
+.ja_madal_paging_btn:hover {
+    background-color: rgb(247, 249, 250);	
+}
+
+
+
+
+
+
+
+/****************맨 위 검색**********************/
+.ja_select_box {
+	min-width: 768px;
+	max-width: 1256px;
+	height: 50px;
+	margin: 24px auto;
+	padding:  0 60px;
+}
+
+.ja_select_button {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: 0;
+	width: 100%;
+}
+
+.ja_select {
+	box-shadow: 0 2px 6px rgba(63, 71, 77, 0.15);
+	padding: 8px 8px 8px 16px;
+	display: flex;
+	height: 50px;
+	align-items: center;
+	justify-content: space-between;
+	background: #FFFFFF;
+	border: 1px solid #828C94;
+	border-radius: 41px;
+}
+
+.ja_select > p {
+	font-size: 16px;
+	line-height: 20px;
+	color: #2F3438;
+	text-align: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	white-space: nowrap;
+}
+
+.ja_select > p > span {
+	font-weight: 700;
+}
+
+.ja_select_dbg {
+	display: inline-flex;
+	width: 34px;
+	height: 34px;
+	align-content: center;
+	justify-content: center;
+	background: #35C5F0;
+	border-radius: 50%;
+	position: relative;
+}
+
+.ja_select_dbg > span {
+	display: inline-block;
+	font-size: 18px;
+	line-height: 1;
+	color: #FFFFFF;
+	font-family: OhouseIcon;
+	vertical-align: top;
+	position: absolute;
+	top: 8px;
+}
+
+.ja_select_dbg > span::before {
+	content: "\ea4c"
+}
+
+.ja_hr {
+	margin: 24px 0px;
+	height: 1px;
+	border: none;
+	background-color: #EAEDEF;
+}
+
+/***************책임보장***********************/
+.ja_ad_box {
+	max-width: 1256px;
+	margin: 0 auto;
+	padding: 0 60px;
+	min-height: 134px;
+}
+
+.ja_ad_box > section {
+	margin-bottom: 40px;
+}
+
+.ja_ad_box_title_box {
+	width: auto;
+	text-align: left;
+	vertical-align: top;
+	margin-bottom: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ja_ad_box_title_text {
+	display: flex;
+	align-items: center;
+}
+
+.ja_ad_box_title_text > div {
+	font-size: 18px;
+	line-height: 24px;
+	color: #2F3438;
+	font-weight: 700;
+	margin-left: 4px;
+}
+
+.ja_ad_box_title_md {
+	font-size: 14px;
+	line-height: 18px;
+	color: #828C94;
+	font-weight: 700;
+}
+
+.ja_ad_element_box {
+	display: flex;
+	gap: 10px;
+}
+
+.ja_ad_element {
+	width: 372px;
+	padding: 12px;
+	border: 1px solid #DADDE0;
+	border-radius: 8px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.ja_ad_element > div:nth-child(1){
+	display: flex;
+	margin-bottom: 12px;
+}
+
+.ja_ad_element_text {
+	font-size: 12px;
+	line-height: 16px;
+	color: #2F3438;
+}
+
+/**************정렬***********************/
+.ja_sort_box {
+	max-width: 1256px;
+	margin: 0 auto;
+	padding: 0 60px;
+	min-height: 32px;
+}
+
+.ja_sort {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-align: end;
+}
+
+.ja_sort_btn {
+	position: relative;
+}
+
+.ja_sort_btn_inner {
+	position: relative;
+}
+
+.ja_sort_btn_inner > ul {
+	display: flex;
+	overflow: hidden;	
+}
+
+.ja_sort_btn_inner > ul > li {
+	margin: 0 8px 0 0;
+	scroll-snap-align: start;
+}
+
+.ja_sort_btn_border {
+	display: inline-block;
+	position: relative;
+	height: 32px;
+	border-radius: 16px;
+	padding: 0 12px;
+	line-height: 0;
+	color: #2F3438;
+	background-color: #F7F9FA;
+	
+}
+
+.ja_sort_btn_border.on {
+	color: #FFFFFF;
+	background-color: #35C5F0;
+}
+
+.ja_sort_btn_border::before {
+	content: "";
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ja_sort_btn_check {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+}
+
+.ja_sort_btn_borde_text {
+	font-size: 14px;
+	line-height: 18px;
+	vertical-align: middle;
+	white-space: nowrap;
+	margin-left: -4px;
+}
+
+.ja_sort_gor {
+	position: relative;
+}
+
+.ja_sort_gor_check_box {
+	display: inline-block;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border: 1px solid;
+	border-radius: 4px;
+	border-color: rgb(218, 221, 224);
+	background-color: #FFFFFF;
+	margin-right: 6px;
+}
+
+.ja_sort_gor_check_box.on {
+	border-color: #35C5F0;
+	background-color: #35C5F0;
+}
+
+.ja_sort_gor_check {
+	position: absolute;
+	overflow: hidden;
+	top: 3.6px;
+	left: 3px;
+	width: 0px;
+	height: 12px;
+}
+
+.ja_sort_gor_check.on {
+	width: 12px;
+}
+
+.ja_sort_gor_check > span {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 1;
+	vertical-align: top;
+	color: #FFFFFF;
+	font-family: OhouseIcon;
+}
+
+.ja_sort_gor_check_icon::before {
+	content: "\e958";
+}
+
+
+.ja_blank {
+	margin-top: 20px;
+}
+
+/****************프리미엄/일반 업체 시작**********************/
+.ja_content {
+	max-width: 1256px;
+	margin: 0 auto;
+	padding: 0 60px;
+}
+
+.ja_classification {
+	min-width: 768px;
+	margin-bottom: 8px;
+}
+
+.ja_classification > button {
+	height: 30px;
+	border-radius: 4px;
+	font-size: 16px;
+	line-height: 20px;
+	color: #2F3438;
+	font-weight: 500;
+	display: inline-flex;
+	align-items: center;
+	border: none;
+	background: none;
+}
+
+.ja_classification > button > h5 {
+	display: flex;
+	align-items: center;
+	gap: 0px 2px;
+}
+
+.ja_classification > button > h5 > div {
+	color: #828C94;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;	
+}
+
+.ja_classification > button > h5 > span {
+	display: inline-flex;
+	align-items: center;
+	padding: 3px 4px;
+	background-color: #F7F9FA;
+	border-radius: 4px;
+}
+
+.ja_classification > button > h5 > span > div {
+	font-size: 10px;
+	line-height: 14px;
+	color: #828C94;
+	font-weight: 700;
+}
+
+.ja_cla_icon {
+	display: inline-flex;
+	margin-left: 2px;
+}
+
+.ja_cla_icon > span {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 1;
+	color: #828C94;
+	font-family: OhouseIcon;
+	vertical-align: top;
+}
+
+.ja_cla_icon > span::before {
+	content: "\e9e7";
+}
+
+.ja_content_banner {
+	min-width: 1136px;
+	margin: 0px 0px 12px 0px;
+}
+
+.ja_content_banner > div {
+	background-color: #2E3B5C;
+	border-radius: 8px;
+	height: 96px;
+	overflow: hidden;
+	position: relative;
+}
+
+.ja_content_banner > div > a {
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+	vertical-align: top;	
+	height: 96px;
+}
+
+.ja_content_banner > div > a > img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border-radius: 8px;
+	object-fit: contain;
+}
+
+.ja_content_element_box {
+	min-width: 1136px;
+}
+
+.ja_content_element_box > div {
+	position: relative;
+	min-height: 437px;
+	margin: -10px;
+}
+
+.ja_content_element_box > div > div {
+	width: 100%;
+	height: 100%;
+}
+
+.ja_content_element_line_list {
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.ja_content_element_line {
+	display: flex;
+}
+
+/**************업체 한 칸***************/
+.ja_content_element {
+	padding: 10px;
+	display: grid;
+	grid-template-columns: minmax(0,1fr);
+	grid-auto-rows: minmax(0,1fr);
+	width: 33.333333333333336%;
+}
+
+.ja_content_element > div > article {
+	border-radius: 8px;
+}
+
+.ja_content_ele_inner {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	border-radius: 8px;
+	border:none;
+	overflow: unset;
+}
+
+/**************업체 한 칸 사진***************/
+.ja_content_ele_img_box {
+	position: relative;
+	order: -1;
+	width: 365.33px;
+	height: 242px;
+}
+
+.img_box_div {
+	position: relative;
+	border-radius: 8px 8px 0 0;
+}
+
+.ja_content_ele_img_list { /*이미지ul*/
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+	flex-wrap: wrap;
+	min-height: 100%;
+}
+
+/*********양쪽 버튼시작(slick)*********/
+.ja_content_ele_img_list > button.slick-prev {
+	left: -20px;
+	z-index: 1;
+	opacity: 0;
+}
+ 
+.ja_content_ele_img_list > button.slick-next {
+	right: -20px;
+	opacity: 0;
+}
+
+.ja_content_ele_img_list > button.slick-prev:before,
+button.slick-next:before {
+	font-family: OhouseIcon;
+	vertical-align: top;
+	content: "\e968";
+	color: #2F3438;
+}
+
+.ja_content_ele_img_list > button.slick-prev:before {
+	content: "\e964";
+	margin-right: 4px;
+	margin-left: 0;
+}
+
+.ja_content_ele_img_list > button.slick-prev,button.slick-next{
+	background: #FFFFFF;
+	border-radius: 50px;
+	width: 40px;
+	height: 40px;
+	box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+}
+
+.ja_content_ele_img_list >
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: #2F3438 !important; 
+    outline: none !important;
+    background: #FFFFFF !important;
+}
+
+
+/*********양쪽 버튼끝(slick)*********/
+
+/*********동그라미(slick)*********/
+.ja_content_ele_img_list > .slick-dots {
+	bottom: 8px;
+}
+
+.ja_content_ele_img_list > .slick-dots li {
+	margin : 0px -4px;
+}
+
+
+.ja_content_ele_img_list > .slick-dots li.slick-active button::before {
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
+.ja_content_ele_img_list > .slick-dots li button:before {
+	color: rgb(255, 255, 255, 0.7);
+	font-size: 8px;
+	
+	transition: 0.15s background-color,0.15s width,0.15s height;
+
+	/*밑에 스탠다드 있을 때 생겨야함*/ 
+	transform: translateY(-131%);
+}
+/*********동그라미 끝(slick)*********/
+
+.ja_content_ele_imgs { /*이미지 li*/
+	flex: 0 0 auto;
+	user-select: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.ja_content_ele_img_a { /*이미지 li>a*/
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	border:none;
+	background: none;
+	vertical-align: top;
+	width: 365.33px;
+	height: 242px;
+	object-fit: cover;
+}
+
+.ja_content_ele_imgs > a > img {
+	border-radius: 8px;
+	width: 365.33px;
+	height: 242px;
+	object-fit: cover;
+	background-color: rgb(247, 249, 250);
+}
+
+.stnadard {
+	position: absolute;
+	bottom: -2px;
+	border-radius: 0 0 8px 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #2E3B5C;
+	height: 32px;
+	width: 100%;
+	overflow: hidden;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.stadard_text {
+	font-size: 12px;
+	line-height: 16px;
+	color: #FFFFFF;
+	margin-left: 6px;
+}
+
+/**************업체 한 칸 텍스트***************/
+.ja_content_ele_text_box {
+	padding: 16px 0px;
+	position: relative;
+	width: 365.33px;
+}
+
+.ja_content_ele_text_a {
+	text-align: left;
+}
+
+.ja_content_ele_text_title {
+	display: flex;
+	align-items: center;
+	margin-bottom: 4px;
+}
+
+.ja_content_ele_text_title > div:nth-child(1){
+	flex: 0 1 auto;
+	min-width: 0;
+	margin-right: 4px;
+}
+
+.ja_content_ele_text_title1 { /*업체명*/
+	font-size: 16px;
+	line-height: 20px;
+	color: #2F3438;
+	font-weight: 700;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	-webkit-line-clamp: 1;
+}
+
+.ja_content_ele_text_title2 { /*책임보장*/
+	flex: 0 0 auto;
+	max-width: 60%;
+}
+
+.ja_content_ele_text_title2 > div {
+	display: flex;
+	align-items: center;
+}
+
+.ja_content_ele_text_star_bold {
+	display: flex;
+	align-items: center;
+	color: #2F3438;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.ja_con_ele_text_star {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 1;
+	color: #35C5F0;
+	font-family: OhouseIcon;
+	vertical-align: top;
+}
+
+.ja_con_ele_text_star::before {
+	content: "\ea75";
+}
+
+.ja_con_ele_text_avg { /*별점*/
+	margin-left: 2px;
+	margin-right: 6px;
+	color: #35C5F0;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.ja_con_ele_text_bold {
+	display: flex;
+	align-items: center;
+}
+
+.ja_con_ele_text_bold > span:nth-child(1){
+	display: inline-flex;
+	align-items: center;
+	font-size: 12px;	
+}
+
+.ja_con_review_num { /*계약자 리뷰 수*/
+	margin-left: 2px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.ja_dot{ /* 점 */
+	content: '';
+	display: inline-block;
+	width: 2px;
+	height: 2px;
+	margin: 0 3px;
+	background-color: #C2C8CC;
+	border-radius: 50%;
+	vertical-align: 3px;
+}
+
+.ja_con_ele_text_bold > div:nth-child(1){
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.ja_con_review_distance { /*거리 몇 km */
+	font-size: 12px;
+	line-height: 20px;
+	color: #2F3438;
+	font-weight: 700;
+}
+
+.ja_con_review_contract_num { /*최근계약 수*/
+	margin-left: 2px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.ja_content_ele_text_paice {
+	position: relative;
+}
+
+.ja_con_ele_text_price_inner {
+	display: inline-flex;
+	align-items: center;
+}
+
+.ja_con_ele_text_price_title {
+	font-size: 12px;
+	line-height: 16px;
+	color: #828C94;
+}
+
+.ja_con_ele_text_price_inner > span {
+	display: inline-flex;
+	align-items: center;
+	margin-left: 3px;
+	color: #828C94;
+} 
+
+.ja_con_ele_text_price_inner > span > span {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 1;
+	font-family: OhouseIcon;
+	vertical-align: top;
+}
+
+.ja_con_ele_text_price_inner > span > span::before {
+	content: "\e9e7";
+}
+
+.ja_content_ele_text_notice{
+	margin-top: 10px;
+}
+
+.ja_content_ele_text_notice > div {
+	display: flex;
+	align-items: center;
+	background: #EFFBFF;
+	font-size: 12px;
+	line-height: 16px;
+	border-radius: 4px;
+	padding: 8px;
+} 
+
+.ja_content_ele_text_notice > div > span {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 1;
+	color: #2F3438;
+	font-family: OhouseIcon;
+	vertical-align: top;
+}
+
+.ja_content_ele_text_notice > div > span::before {
+	content: "\ea67";
+}
+
+.ja_content_ele_text_notice_text { /*업체공지내용*/
+	margin: 0 8px;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+}
+/****************프리미엄/일반 업체 끝**********************/

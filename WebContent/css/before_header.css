@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+@import "https://assets.ohou.se/design-system/bbf3fca1e650ee6d.css";
+@import "https://assets.ohou.se/fonts/pretendard/v1.3.8/pretendardvariable-dynamic-subset.css";@font-face {
+	font-family: OhouseIcon;
+	src: url(https://assets.ohou.se/design-system/3298ed52addbc709.eot);
+	src: url(https://assets.ohou.se/design-system/3298ed52addbc709.eot#iefix) format("embedded-opentype"),url(https://assets.ohou.se/design-system/d8923b386a66fd50.woff2) format("woff2"),url(https://assets.ohou.se/design-system/9e79341d6a2fe0d2.woff) format("woff"),url(https://assets.ohou.se/design-system/5355f736e6a7bc5b.ttf) format("truetype"),url(https://assets.ohou.se/design-system/3ba7913eab100858.svg#OhouseIcon) format("svg");
+}
+* {
+	box-sizing : border-box;
+	margin : 0;
+	padding : 0;
+	font-family: "Pretendard Variable", sans-serif;
+	letter-spacing : -0.3px;
+	text-decoration : none;
+}
+div.b {
+	border : 1px solid #B5E61D;
+}
+.fl {float : left}
+.fr {float : right}
+
+#header {
+	width : 1261px;
+	height : 80px;
+	padding : 10px 60px;
+	margin : 0 323.5px;
+}
+#logo {
+	width : 66px;
+	height : 38px;
+    margin: 11px 35px 0 -4px;
+	padding : 4px;
+	float : left;
+}
+#logo > img {
+	width : 100%;
+	height : 100%	
+}
+#title {
+	width : 377px;
+	height : 54px;	
+	float : left;
+    margin: 3px 0 3px -3px;
+	line-height : 1;
+	letter-spacing : -0.3px;
+}
+.sub_title {
+	padding : 21px 5px 15px 5px;
+	margin : 0 10px;
+	color : rgb(47, 52, 56);
+	font-size : 18px;
+	font-weight : bold;
+	font-family: "Pretendard Variable", sans-serif;
+}
+.sub_title:nth-child(1) {
+	color : rgb(53, 197, 240);
+}
+#else {
+	width : 650px;
+	height : 54px;
+	float : left;
+	margin: 3px 0;
+}
+#search {
+	width : 296.17px;
+	height : 40px;
+	margin: 7px 14px 0 0;
+    border: 1px solid #DADDE0;
+    border-radius: 4px;
+    padding: 0 14px;
+    position: relative;
+}
+#search > span::before { 
+    font-family: OhouseIcon;
+    content: "\ea4d";
+    color: #828C94;
+    font-size: 24px;
+    position: absolute;
+    top: 6px;
+}
+#search > input[type="text"] {
+    height: 100%;
+    width: 80%;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+#search > input[type="text"]::placeholder {
+	color: #C6C8CC;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: -1.5px;
+}
+#busket_logo {
+	width : 35.703px;
+	height : 32px;
+	padding : 6px;
+	margin : 8px 1px;
+}
+#busket_logo::before {
+	font-family: OhouseIcon;
+	content: "\e94e";
+	font-size : 24px;
+}
+#other {
+	width : 302.125px;
+	height : 40px;
+	margin : 7px 0;
+	position : relative;
+}
+#threeo {
+	width : 191.8px;
+	height : 18px;
+	margin: 11px 10px 0 8px;
+	position : absolute;
+}
+.sub_threeo {
+	font-family: "Pretendard Variable", sans-serif;
+	font-size : 14px;
+	line-height : 18px;
+	padding : 0 10px;
+	letter-spacing: -0.3px;
+}
+.sub_threeo:nth-child(1) {border-right : 1px solid rgb(234, 237, 239)}
+.sub_threeo:nth-child(2) {border-right : 1px solid rgb(234, 237, 239)}
+.sub_threeo:nth-child(3) {padding-right : 8px;}
+#write {
+	width : 92.32px;
+	height : 40px;
+    background-color: #35C5F0;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+.sub_write {
+	height : 40px;
+	font-family: "Pretendard Variable", sans-serif;
+	font-size : 14px;
+    font-weight: 400;
+	line-height : 18px;
+	display:flex;
+	justify-content : center;
+	align-items: center;
+}
+.V::after {
+	font-family: OhouseIcon;
+	content: "\e961";
+	font-size : 18px;
+	margin-left : 6px;
+}
+#nav {
+	width : 1903px;
+	height : 51px;
+	padding-left :383.5px;
+ 	border-bottom : 1px solid #EBEDEE;
+	border-top : 1px solid #EBEDEE;
+}
+#sub_nav {
+	width : 934px;
+	height : 51px;	
+}
+#sub_hot {
+	width : 192px;
+	height : 30px;
+	margin-left : 10px;
+}

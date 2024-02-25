@@ -1,0 +1,176 @@
+@charset "UTF-8";
+@import "https://assets.ohou.se/design-system/bbf3fca1e650ee6d.css";
+@import "https://assets.ohou.se/fonts/pretendard/v1.3.8/pretendardvariable-dynamic-subset.css";@font-face {
+   font-family: OhouseIcon;
+   src: url(https://assets.ohou.se/design-system/3298ed52addbc709.eot);
+   src: url(https://assets.ohou.se/design-system/3298ed52addbc709.eot#iefix) format("embedded-opentype"),url(https://assets.ohou.se/design-system/d8923b386a66fd50.woff2) format("woff2"),url(https://assets.ohou.se/design-system/9e79341d6a2fe0d2.woff) format("woff"),url(https://assets.ohou.se/design-system/5355f736e6a7bc5b.ttf) format("truetype"),url(https://assets.ohou.se/design-system/3ba7913eab100858.svg#OhouseIcon) format("svg");
+}
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "pretendard variable", "noto sans kr", "apple sd gothic neo", "맑은 고딕", "malgun gothic", sans-serif;
+	text-decoration: none;
+}
+.h_menu > a {
+	text-decoration: none;
+}
+.border {
+	border : 1px solid red;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+#div_header {
+	width:100%;
+	position: fixed;
+	z-index: 3;
+	border-bottom: 1px solid lightgray;
+	background-color: white;
+	top: 0;
+}
+
+#div_header_inner {
+	width: 1256px;
+	height: 80px;
+	padding: 10px 60px;
+	margin: 0px 323.5px;
+	
+}
+#div_header_logo {
+	width: 74px;
+	height: 30px;
+	margin-right: 35px;
+	margin-top: 15px;
+}
+.home_menu > span:last-child {
+	margin-right: 104px;
+
+}
+.h_menu{
+	float: left;
+	display: inline-block;
+	padding: 16px 0px 15px;
+	margin: 5px 13px 0 10px;
+	letter-spacing: -0.3px;
+	font-size: 18px;
+	font-weight: bold;
+	color:#2F3438;
+}
+.h_menu a:hover{
+	color: skyblue;
+}
+#div_search {
+	width: 645px;
+	height: 54px; 
+}
+.search1 {
+	wdith: 339.58px;
+	height: 40px;
+	padding: 0 14px;
+	float: left;
+	border: 1px solid lightgray;
+	border-radius: 4px;
+	margin-top: 7px; 
+	margin-right: 14px;
+	font-size: 16px;		
+}
+.dbg {
+	float:left;
+	vertical-align: middle;
+	line-height: 38px;
+}
+.dbg::before {
+	content: "\ea4d";
+	font-family: OhouseIcon;
+	font-size: 24px;
+	color: #828C94;
+}
+.top {
+	float: left;
+	width: 279.88px;
+	height: 38px;
+	padding: 0 6px 0 0px;
+	border: none;
+	outline: none;
+}
+.icon{
+	float:left;
+	vertical-align: middle;
+	line-height: 38px;
+	width: 37.7px;
+	height: 54px;
+	padding: 9px 6.85px;
+}
+.icon > a {
+	text-decoration: none;
+}
+.heart::before {
+	content: "\e9dd";
+	font-family: OhouseIcon;
+	font-size: 24px;
+	color: #828C94;
+}
+.heart:hover:before {
+	color: skyblue;
+}
+.bell::before {
+	content: "\ea15";
+	font-family: OhouseIcon;
+	font-size: 24px;
+	color: #828C94;
+}
+.bell:hover:before {
+	color: skyblue;
+}
+.cart::before {
+	content: "\e94e";
+	font-family: OhouseIcon;
+	font-size: 24px;
+	color: #828C94;
+}
+.cart:hover:before {
+	color: skyblue;
+}
+.profile {
+	float:left;
+	width: 40px;
+	height: 40px;
+	margin: 7px 20px 7px 13px;
+	border: none;
+}
+.write_button {
+	float: right;
+	width: 92.31px;
+	height: 40px;
+	margin-top: 7px;
+	background-color: #35C5F0;
+	border-radius: 5px;
+}
+.real_button {
+	width: 92px;
+	height: 40px;
+	background: none;
+	border: none;
+}
+.write1{
+	letter-spacing: -0.3px;
+	line-height: 20px;
+	font-size: 14px;
+	margin-right: 3px;
+	color: white;
+	
+}
+.arrow::before {
+	content: "\e961";
+	font-family: OhouseIcon;
+	font-size: 18px;
+	color: white;
+	margin-right: 5px;
+	vertical-align: top;
+}

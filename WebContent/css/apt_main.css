@@ -1,0 +1,135 @@
+@charset "UTF-8";
+#sidebar{
+	float : left;
+	width: /* 390px; */ 400px;
+	height: 802px;
+    overflow-y: scroll;
+}
+.search {
+	width: 400px;
+	height: 92px;
+	border-top : 1px solid white;
+	border-bottom : 1px solid  rgb(221, 221, 221);
+}
+
+.search2 {
+	width: 360px;
+	height: 52px;
+	float: left;
+	border: 2px solid #35c5f0;
+	border-radius: 9px;
+	background: white;
+	padding: 2px;
+	margin: 18px 20px;
+	position: relative;
+	
+}
+
+.search2 > div {
+	margin: 13px;
+	padding-left: 35px;
+	width: 310px;
+	height: 46px;
+	font-size: 16px;
+	position: absolute;
+	left: -5px;
+	color: rgb(130, 140, 148);
+	letter-spacing: -0.3px;
+	line-height: 20px;
+}
+
+
+.search2 > .dbg {
+	position: absolute;
+	top: 6px;
+    left: 12px;
+}
+
+.under {
+	width: 400px;
+	height: 10px;
+	background: #F7F9FA;
+}
+
+.n_apt {
+	width: 400px;
+	height: 60px;
+	border-bottom : 1px solid  rgb(221, 221, 221);
+}
+
+.n_apt > span {
+	font-size: 16px;
+	color: #424242;
+	line-height: 60px;
+	padding: 20px;
+}
+
+.apt {
+	width: 400px;
+	height: 78px;
+	border-bottom : 1px solid  rgb(221, 221, 221);
+	position: relative;
+}
+
+.apt.selected {
+	background-color: rgb(247, 250, 255);
+}
+
+.apt div {
+	padding: 16px;
+}
+
+.apt_name1 {
+	font-size: 18px;
+    line-height: 24px;
+    color: rgb(47, 52, 56);
+    font-weight: 700;
+    margin-bottom: 2px;
+    letter-spacing: -0.3px;
+
+}
+
+.apt_name2 {
+	font-size: 14px;
+    line-height: 20px;
+    color: rgb(120, 140, 148);
+    font-weight: 300;
+    letter-spacing: -0.3px;
+}
+
+.apt_arrow {
+	width: 15.7px;
+	height: 16px;
+	position: absolute;
+	top: 32px;
+	right: 14px;
+}
+
+.apt_arrow::before {
+	font-family: OhouseIcon;
+	content: "\eadd";
+	font-size: 16px;
+	line-height: 16px;
+	letter-spacing: -0.3px;
+	color: rgb(66, 66, 66);
+}
+
+#map {
+	width: 79%; 
+	height: 800px;
+	float: left;
+}
+
+.marker_item {
+	padding: 8px;
+	cursor: pointer;
+	text-align: center;
+}
+		
+.marker_item .bottom {
+	text-align: center;
+	text-shadow: -3px 0px white, 0px 3px white, 3px 0px white, 0px -3px white;
+	font-weight : bold;
+	font-size: 13px; 
+	z-index: 10;
+}

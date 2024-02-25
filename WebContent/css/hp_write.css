@@ -1,0 +1,430 @@
+@charset "UTF-8";
+
+@import "https://assets.ohou.se/design-system/bbf3fca1e650ee6d.css";
+@import "https://assets.ohou.se/fonts/pretendard/v1.3.8/pretendardvariable-dynamic-subset.css";
+@font-face {
+	font-family: OhouseIcon;
+	src: url(https://assets.ohou.se/design-system/3298ed52addbc709.eot);
+	src: url(https://assets.ohou.se/design-system/3298ed52addbc709.eot#iefix) format("embedded-opentype"),url(https://assets.ohou.se/design-system/d8923b386a66fd50.woff2) format("woff2"),url(https://assets.ohou.se/design-system/9e79341d6a2fe0d2.woff) format("woff"),url(https://assets.ohou.se/design-system/5355f736e6a7bc5b.ttf) format("truetype"),url(https://assets.ohou.se/design-system/3ba7913eab100858.svg#OhouseIcon) format("svg");
+}
+* {
+	box-sizing : border-box;
+	margin : 0;
+	padding : 0;
+	text-decoration : none;
+	letter-spacing : -0.3px;
+	font-family : "Pretendard Variable", sans-serif;
+}
+.fl {float:left;}
+.fr {float:right;}
+div.b {
+	border : 1px solid purple;
+}
+#container { /* 전체 사이즈 */
+	/* display : flex;
+	flex-direction : column;
+	align-items : stretch; */
+	width : 1903px;
+	min-height : 1000px;
+}
+#head_st {
+	position : sticky;
+	top : 0;
+	z-index : 1;
+    transition : top 0.1s ease 0s;
+	background : white;
+}
+#head { /* 전체 중 상단 */
+	position : relative;
+	width : 100%;
+	height : 80px;
+	border-bottom : 1px solid rgb(219, 219, 219);
+}
+.kh_h_logo > img { /* 상단 중 로고 */
+	wigth : 74px;
+	height : 32px;
+	margin : 25px 0 22px 60px;
+}
+.kh_h_else { /* 상단 중 게시글관련 */
+	position : absolute;
+	top : 17px;
+	right : 655px;
+	width : 621px;
+	height : 45px;
+}
+.kh_h_head_btn { /* 상단 중 버튼 */
+	position : absolute;
+	top : 0;
+	right : 0;
+	padding : 17px 25px 18px 0;
+}
+.kh_hhb_save { /* 상단 버튼 중 임시저장 */
+	width : 132px;
+	height : 45px;
+	margin : 0 5px;
+	padding : 11px 5px;
+	border : 1px solid rgb(53, 197, 240);
+	border-radius : 4px;
+	background : rgb(255, 255, 255);
+	color : rgb(53, 197, 240);
+	font-size : 15px;
+	font-weight : bold;
+	line-height : 20px;
+}
+.kh_hhb_appli { /* 상단 버튼 중 발행신청 */
+	width : 132px;
+	height : 45px;
+	margin : 0 5px;
+	padding : 11px 5px;
+	border : 1px solid rgb(53, 197, 240);
+	border-radius : 4px;
+	background : rgb(53, 197, 240);
+	color : rgb(255, 255, 255);
+	font-size : 15px;
+	font-weight : bold;
+	line-height : 20px;
+}
+#content { /* 전체 중 하단 */
+	width : 720px;
+	height : 1176px;
+	margin : 0 auto;
+}
+.kh_con_guied { /* 집들이작성가이드 */
+	height : 514px;
+	margin : 30px 0 16px;
+	border-radius : 4px;
+	border : 1px solid rgb(218, 220, 224);
+	background-color : rgb(255, 255, 255);
+	box-shadow : rgba(234, 235, 239, 0.8) 0px 2px 4px 0px;
+}
+.kh_cg_btn { /* 작성 가이드 중 버튼 */
+	display : flex;
+	align-items : center;
+	width : 100%;
+	height : 76px;
+	padding : 25px 30px;
+	text-align : left;
+	border : none;
+	background : none;
+	border-radius : 4px;
+}
+.kh_cg_btn_1 { /* 작성 가이드 글 */
+	flex : 1 0 0px;
+}
+.kh_cg_btn1_1 > svg { /* 작성 가이드 아이콘 */
+	vertical-align : -7px;
+}
+.kh_cg_btn1_2 { /* 집들이 작성가이드 */
+	margin-left : 8px;
+	font-size : 15px;
+	font-weight : bold;
+	line-height : 26px;
+	color : rgb(63, 71, 77);
+}
+.kh_cg_btn1_3 { /* 집들이 작성 가이드 옆 설명 */
+	margin-left : 8px;
+	font-size : 13px;
+	font-weight : normal;
+	line-height : 26px;
+	color : rgb(164, 172, 179);
+    vertical-align : 1px;
+}
+.kh_cg_btn_2 { /* 작성 가이드 옆 꺽쇠아이콘 */
+	flex : 0 0 auto;
+	padding-top : 5px;
+	font-size : 18px;
+	color : rgb(130, 140, 148);
+	transition : transform 0.2s ease 0s;
+    transform : rotate(180deg);
+}
+.kh_cg_de { /* 작성 가이드 글 */
+	padding : 0px 30px 30px;
+}
+.kh_cg_detail_list { /* 작성 가이드 리스트 */
+    margin-right : 10px;
+	list-style : none;
+	font-size : 15px;
+	line-height : 25px;
+	color : rgb(66, 66, 66);
+}
+.kh_cg_detail_list > li { /* 글귀들 */
+	position : relative;
+	margin : 12px 0 12px 35px;
+	word-break : break-all;
+}
+.kh_cg_detail_list > li::before { /* 글귀 앞 점 */
+    position: absolute;
+    display: inline-block;
+	content: "•";
+	top: -1px;
+    right: 100%;
+    margin-right: 15px;
+    font-size: 22px;
+}
+.kh_cg_detail_list > li a { /* 바로가기 */
+	color : rgb(53, 197, 240);
+	font-weight : bold;
+}
+.kh_essential_im { /* 필수정보입력 */
+	min-height : 1000px;
+	margin : 16px 0;
+	border-radius : 4px;
+	border : 1px solid rgb(218, 220, 224);
+	background-color : rgb(255, 255, 255);
+    box-shadow : rgba(234, 235, 239, 0.8) 0px 2px 4px 0px;
+}
+.kh_ei_btn { /* 필수정보입력 중 버튼 (자식 내용들은 위와동일=위의클래스 가지고 왔당)*/
+	display : flex;
+	align-items : center;
+	width : 100%;
+	height : 76px;
+	padding : 25px 30px;
+	text-align : left;
+	border : none;
+	background : none;
+	border-radius : 4px;
+}
+.kh_ei_de { /* 필수정보입력 칸 */
+	padding : 15px 40px 30px;
+}
+.kh_eide { /* 필수정보입력 칸 반복's */
+	display : flex;
+	align-items : flex-start;
+	padding : 12px 0;
+}
+.kh_eide_name { /* 필수정보입력 데이터이름 */
+	width : 130px;
+	flex : 0 0 auto;
+	padding : 8px 0;
+	font-size : 15px;
+	font-weight : bold;
+	line-height : 24px;
+	color : rgb(41, 41, 41);
+	word-break : keep-all;
+}
+.kh_eide_name > span {
+	margin-left : 3px;
+	color : rgb(255, 119, 119);
+}
+.kh_eide_input { /* 필수정보입력 데이터입력창 */
+	flex : 1 0 0px;
+	display : inline-flex;
+}
+.kh_eide_input_sel { /* 필수정보입력 데이터입력창 셀렉트박스용 */
+	position : relative;
+	display: inline-block;
+	width : 220px;
+	margin : 3px 6px 3px 0;
+}
+.kh_eide_input_sel_sub { /* 필수정보입력 데이터입력창 옵션 */
+	width : 100%;
+	height : 40px;
+	padding : 0 30px 0 15px;
+	background : none;
+	line-height : 40px;
+	font-size : 15px;
+	color : #424242;
+	background-color : #fff;
+	border : 1px solid #dbdbdb;
+	border-radius : 4px;
+}
+label.kh_py_radio {
+    font-size: 15px;
+    cursor: pointer;
+    display: block;
+    padding-left: 32px;
+    line-height: 22px;
+    position: relative;
+}
+label.kh_py_radio > input[type='radio'] {
+	position: absolute;
+	opacity: 0;
+}
+label.kh_py_radio > input:checked + span {
+	border-color: #35c5f0;
+}
+label.kh_py_radio > input:checked + span:after {
+	width: 22px;
+    height: 22px;
+    border-width: 7px;
+}
+label.kh_py_radio > input:not(:checked) + span {
+    box-sizing: border-box;
+    height: 22px;
+    width: 22px;
+    border-radius: 12px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    display: block;
+    transition: .2s ease;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+label.kh_py_radio > span:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    background: #fff;
+    border-radius: 11px;
+    transition: .2s ease;
+    border: 0 solid #35c5f0;
+    box-sizing: border-box;
+}
+/* .kh_eide_input_svg {
+	position : absolute;
+	top : 10px; 
+	right : 10px;
+	padding : 5px;
+	cursor : default;
+    pointer-events: none;
+} */
+.kh_eide_input_radio_sub { /* 필수정보입력 데이터입력창 평수용 */
+	margin : -3px -5px;
+	list-style : none;
+}
+.kh_eide_input_radio_sub > li {
+	display: inline-block; 
+	width : auto;
+	padding : 9px 20px 9px 5px;
+}
+.kh_eide_input_pyunder1 {  /* 필.정.입 평수 단층선택시 */
+	display : none;
+	/* display : inline-block; */
+	position : relative;
+	margin-top : 8px;
+	width : 220px;
+}
+.py_ru1_1 {
+	width : 100%;
+	padding : 8px 15px 9px;
+	border : 1px solid #dbdbdb;
+	background-color : #fff;
+	color : #000;
+	border-radius : 4px;
+	line-height : 21px;
+	font-size : 15px;
+}
+.kh_py_ru_inner { /* 필.정.입 아래 평 글자 */
+	position : absolute;
+	right : 16px;
+	top : 50%;
+	margin-top : -10px;
+	font-size : 15px;
+	color : rgb(66, 66, 66);
+	line-height : 20px;
+	pointer-events : none;
+}
+.kh_eide_input_pyunder2 { /* 필.정.입 평수 2층..선택시 */
+	display : none;
+	/* display : flex; */
+	flex-wrap : nowrap;
+	margin-top : 3px;
+	align-items : center;
+}
+.kh_pyunder2_all { /* 필.정.입 2층 하단 글 */
+	width : 55px;
+	margin : 3px 6px 3px 0px;
+	font-size : 15px;
+    line-height : 21px;
+    color : rgb(41, 41, 41);
+	text-align : right;
+}
+.kh_pyunder2_all > span { /* 필.정.입 2층 하단 글 중 * */
+	margin-left : 2px;
+    color : rgb(255, 119, 119);
+	text-align : right;
+	font-size : 15px;
+    line-height : 21px;
+}
+.kh_eide_input_pyunder2 > div {
+	position : relative;
+	flex : 0 10 100px;
+	width : 100px;
+}
+.py_ru2_1 {
+    width : 100%;
+	padding : 8px 15px 9px;
+	background-color : #fff;
+    border : 1px solid #dbdbdb;
+    color : #000;
+    border-radius : 4px;
+    font-size : 15px;
+    line-height : 21px;
+}
+.kh_eide_input_pyunder3 { /* 필.정.입 평수 3층..선택시 */
+	display : none;
+	/* display : flex; */
+	align-items : center;
+	flex-wrap : nowrap;
+	margin-top : 3px;
+}
+.kh_eide_input_pyunder3 > div {
+	position : relative;
+	flex : 0 1 100px;
+	width : 75.9px;
+}
+.kh_eide_input_sel2 { /* 필수정보입력 데이터입력창 셀렉트박스용 옆 작성 칸 */
+	margin : 3px 6px 3px 0;
+	width : 220px;
+}
+.kh_eide_input_sel2 > input {
+	width : 100%;
+	padding : 8px 15px 9px;
+	border : 1px solid #dbdbdb;
+	background-color : #fff;
+	color : #000;
+	border-radius : 4px;
+	line-height : 21px;
+	font-size : 15px;
+}
+.kh_eide_input_family_num { 
+	position : relative;
+	margin-top : 3px;
+	width : 220px;
+}
+.kh_eide_input_worker_half {
+	display : none;
+	width : 220px;
+	margin-top : 8px;
+}
+.kh_eide_input_worker_pro {
+	display : none;
+	width : 220px;
+	margin-top : 8px;
+}
+.kh_eide_input_budget_1 {
+	margin : -3px 0;
+}
+.kh_eide_budget_title {
+	display : inline-block;
+	width : 80px;
+	margin : 3px 6px 3px 0;
+	font-size : 15px;
+	line-height : 21px;
+	color : rgb(41, 41, 41);
+}
+.kh_eide_budget_price {
+	position : relative;
+	display : inline-block;
+}
+.kh_eide_budget_input {
+	display : inline-block;
+	width : 100%;
+	padding : 8px 15px 9px;
+	color : rgb(0, 0, 0);
+	font-size : 15px;
+	border: 1px solid rgb(219, 219, 219);
+    border-radius: 4px;
+}
+.kh_eide_budget_manwon {
+	position : absolute;
+	right: 16px;
+	top: 50%;
+	margin-top : -10px;
+	font-size : 15px;
+	color: rgb(66, 66, 66);
+	line-height: 20px;
+}

@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@import "https://assets.ohou.se/design-system/bbf3fca1e650ee6d.css";
+@import "https://assets.ohou.se/fonts/pretendard/v1.3.8/pretendardvariable-dynamic-subset.css";@font-face {
+	font-family: OhouseIcon;
+	src: url(https://assets.ohou.se/design-system/3298ed52addbc709.eot);
+	src: url(https://assets.ohou.se/design-system/3298ed52addbc709.eot#iefix) format("embedded-opentype"),url(https://assets.ohou.se/design-system/d8923b386a66fd50.woff2) format("woff2"),url(https://assets.ohou.se/design-system/9e79341d6a2fe0d2.woff) format("woff"),url(https://assets.ohou.se/design-system/5355f736e6a7bc5b.ttf) format("truetype"),url(https://assets.ohou.se/design-system/3ba7913eab100858.svg#OhouseIcon) format("svg");
+}
+
+* {
+	box-sizing : border-box;
+	font-family : "Pretendard Variable", sans-serif;
+	letter-spacing: -0.3px;
+	text-decoration: none;
+	margin : 0;
+	padding : 0;
+}
+.fl { float:left; }
+.fr { float:right; }
+
+#main {
+	flex: 0 0 auto;
+    width: 1136px;
+    min-height: 1px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.kh_search_title {
+	width: 100%;
+	margin: 40px 0;	
+}
+.kh_search_title > span {
+	font-size: 18px;
+	font-weight: 700;
+}
+.kh_search_result {
+	width: 100%;
+	max-width: 750px;
+	margin: 40px auto;
+}
+.kh_searched_user {
+    width: 100%;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+	padding: 20px 24px;
+    border-bottom: 1px solid rgb(234, 235, 239);
+}
+.kh_searched_user_img_name {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.kh_user_img {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+}
+.kh_user_img > img {
+	width: 100%;
+    border-radius: 100px;
+    object-fit: cover;
+    /* background: rgb(237, 237, 237); */
+}
+.kh_user_name {
+    font-size: 14px;
+    font-weight: 700;
+}
+.kh_searched_user_follow_btn {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.kh_user_follow_btn {
+    width: 80px;
+    height: 33px;
+    padding: 5px 7px 6px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: #35c5f0;
+}
+.kh_user_follow_btn > svg {
+	width: 9px;
+	margin-right: 5px;
+    padding-top: 4px;
+}
+.kh_user_follow_btn:hover {
+    background-color: #09addb;
+}
+.kh_user_follow_btn_on {
+	width: 80px;
+    height: 33px;
+    padding: 5px 7px 6px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #292929;
+    border: 1px solid #eaebef;
+    border-radius: 5px;
+	background-color: #fff;
+}
+.kh_user_follow_btn_on > svg {
+	width: 9px;
+	margin-right: 5px;
+    padding-top: 4px;
+}
+.kh_user_follow_btn_on:hover {
+	background-color: #f7f8fa;
+    border-color: #eaebef;
+}

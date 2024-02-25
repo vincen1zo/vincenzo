@@ -1,0 +1,667 @@
+@charset "UTF-8";
+section {
+	min-width: 1920px;
+}
+
+/****************리뷰 타이틀 파트*********************/
+.ja_form_header {
+	background-color: #f5f5f5;
+	overflow: hidden;
+	position: relative;
+}
+
+.ja_header_inner_box {
+	padding: 50px 20px;
+	color: #000;
+}
+
+.ja_header_logo {
+	margin: -30px 0 30px;
+}
+
+.ja_header_logo > a {
+	font-size: 30px;
+	line-height: 0;
+	width: 87.98px;
+	height: 30px;
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	margin-left: 14px;
+}
+
+.ja_header_logo > a > img {
+	position: absolute;
+	width: 76%;
+	height: 100%;
+}
+
+.ja_header_inner_box > h1 {
+	margin: 10px 0;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 1.37;
+	text-align: center;
+	word-break: keep-all;
+}
+
+.ja_header_notice {
+	text-align: center;
+	color: #424242;
+	line-height: 21px;
+	letter-spacing: -3px;
+}
+
+.ja_notice_inner {
+	color: rgb(66, 66, 66);
+	text-align: center;
+	line-height: 21px;
+	font-size: 15px;
+}
+
+.ja_notice_inner > div:nth-child(1){
+	margin-bottom: 20px;
+	white-space: pre-line;
+}
+
+.ja_notice_inner > div:nth-child(2){
+	font-weight: bold;
+	
+	margin-bottom: 6px;
+	font-size: 20px;
+}
+
+.ja_notice_inner > div:nth-child(3){
+	margin-bottom: 20px;
+	white-space: pre-line;
+	
+	font-size: 20px;
+}
+
+.ja_notice_inner > div:nth-child(3) > div {
+	font-size: 13px;
+	color: rgb(117, 117, 117);
+	margin: 0;
+	padding: 0;
+}
+
+.ja_store_name {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.ja_con_r_img {
+	position: relative;
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;	
+	display: block;
+}
+
+.ja_con_r_img > img {
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	background-color: #ededed;	
+}
+
+.ja_con_name {
+	display: block;
+	margin: 5px 0 -5px;
+	color: #424242;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+/****************리뷰 내용 파트*********************/
+.ja_form_content {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 30px 0 50px;
+}
+
+/****************핸드폰번호****************/
+.ja_re_phone {
+	margin-bottom: 50px;	
+}
+
+.ja_re_phone > div:nth-child(1) {
+	margin: 0 0 12px;
+	font-size: 20px;
+	font-weight: 700;
+	color: #424242;
+	line-height: 1.35;
+	word-break: keep-all;
+} 
+
+.ja_re_phone > p {
+	color: rgb(255, 119, 119);
+	font-size: 15px;
+	line-height: 1.4;
+}
+
+.ja_re_phone > div:nth-child(3){
+	margin: 20px 0 0;
+} 
+
+.ja_re_phone > div:nth-child(3) > div {
+	display: flex;
+} 
+
+.ja_re_phone > div:nth-child(3) > div > input[type="tel"]{
+	font-size: 15px;
+	border-radius: 4px;
+	transition: border-color .2s,box-shadow .2s,background-color .2s;
+    display: block;
+    box-sizing: border-box;
+    width: 153.33px;
+    height: 40px;
+    padding: 0 15px;
+    line-height: 40px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    color: #424242;
+}
+
+.ja_re_phone > div:nth-child(3) > div > input[type="tel"]:hover{
+	background-color: #fafafa;
+	border-color: #bdbdbd;
+}
+
+.ja_re_phone > div:nth-child(3) > div > span {
+	color: #757575;
+	flex: 0 0 20px;
+	text-align: center;
+	line-height: 40px;
+}
+
+.ja_re_phone > div:nth-child(3) > div > input[type="tel"]::placeholder{
+	color: #dbdbdb;
+}
+
+/****************별점 공지****************/
+.ja_re_star_notice {
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 16px;
+	margin-bottom:25px;
+	background-color: rgb(255, 237, 237);
+}
+
+.ja_re_star_notice > div {
+	display: flex;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+.ja_re_star_notice > div > div:nth-child(1) {
+	display: inline-flex;
+	margin-right: 6px;
+}
+
+.ja_re_star_notice > div > div:nth-child(2) {
+	color: rgb(47, 52, 56);
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.ja_re_star_notice > p {
+	color: rgb(255, 119, 119);
+	font-size: 15px;
+	line-height: 24px;
+}
+
+/****************별점****************/
+.ja_re_box {
+	margin-bottom: 50px;
+}
+
+.ja_re_title {
+	margin: 0 0 12px;
+	font-size: 20px;
+	font-weight: 700;
+	color: #424242;
+	line-height: 1.35;
+	word-break: keep-all;
+}
+
+.ja_re_explanation {
+	margin: 0;
+	font-size: 15px;
+	color: #757575;
+	line-height: 1.4;
+}
+
+.ja_re_star_avg_img {
+	margin: 20px 0 0;
+}
+
+.ja_re_star_avg_img > ul > li {
+	display: inline-block;
+} 
+
+label:not(.selected):not(.hover) .star {
+	color: #dbdbdb;
+}
+
+.star {
+	font-size: 72px;
+	transition: color .1s;
+}
+
+.star_padding {
+	padding-right: 6px;
+}
+
+.star > input {
+	position: absolute;
+	opacity: 0;
+	outline: none;
+}
+
+label {
+	 color: #dbdbdb; 
+}
+
+div.ja_re_box:not(:hover) label.selected {
+	color: #35c5f0; 
+}
+
+label.hover { 
+	color: #82e0fa; 
+}
+
+/****************총점 글씨쓰기****************/
+.ja_re_star_text {
+	margin: 20px 0 0;
+}
+
+.ja_re_star_text > textarea {
+	min-height: 120px;
+	height: 100px;
+	font-size: 15px;
+	border-radius: 4px;
+	line-height: 20px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	transition: border-color .2s,box-shadow .2s,background-color .2s;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    color: #424242;
+    letter-spacing: 0;
+    resize: none;
+}
+
+.ja_re_star_text > textarea:hover {
+	background-color: #fafafa;
+    border-color: #bdbdbd;
+}
+
+.ja_re_start_textarea {
+	padding: 0 15px;
+}
+
+textarea::placeholder{
+	color: #dbdbdb;
+}
+
+/****************시공사진 ~ 시공가격****************/
+.ja_con_review_group {
+	margin-bottom: 50px;
+}
+
+.ja_re_title > span {
+	display: inline-block;
+	margin-left: 3px;
+	font-weight: 400;
+	color: #757575;
+}
+
+.ja_re_explanation > span {
+	color: rgb(255, 119, 119);	
+}
+
+/*사진올리기 버튼*/
+.ja_re_up_photo_box {
+	margin: 20px 0 0;
+}
+
+.ja_re_up_photo_box > ul {
+	display: block;
+	margin-top: -10px;
+}
+
+.ja_re_up_photo_box > ul > li {
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 10px;
+	vertical-align: bottom;
+}
+
+.ja_re_up_photo_box > ul > li > button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #dbdbdb;
+	background-color: #fff;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 1;
+	color: #424242;
+	transition: opacity .1s;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.ja_re_up_photo_box > ul > li > button > span > svg {
+	margin-bottom: 8px;
+} 
+
+.ja_re_adress_box {
+	margin: 20px 0 0;
+}
+
+.ja_re_adress_box > div {
+	margin-bottom: 8px;
+	display: flex;
+	align-content: center;
+}
+
+.ja_re_adress1 {
+	width: 390px;
+	height: 40px;
+	align-items: center;
+	background-color: #fff;
+	font-size: 15px;
+	border-radius: 4px;
+	border-color: #dbdbdb;
+	color: #bdbdbd;
+	margin-right: 10px;
+	transition: border-color .2s,box-shadow .2s,background-color .2s;
+    display: block;
+    padding: 0 15px;
+    line-height: 40px;
+    border: 1px solid #dbdbdb;
+}
+
+.ja_re_blue_btn {
+	width: 100px;
+	height: 40px;
+	background-color: #35c5f0;
+	border-color: #35c5f0;
+	color: #fff;
+	padding: 12px 0 13px;
+	font-size: 15px;
+	border: 1px solid;
+	border-radius: 4px;
+	font-weight: 700;
+}
+
+.ja_re_blue_btn:hover {
+	background-color: #11b9eb;
+}
+
+.ja_re_adress2 {
+	width: 100%;
+	resize: none;
+}
+
+.ja_re_adress_box > textarea:hover {
+	background-color: #fafafa;
+    border-color: #bdbdbd;
+}
+
+.ja_re_file_box {
+	margin: 20px 0 0;
+}
+
+.ja_re_file_box > div {
+	display: flex;
+	align-items: center;
+}
+
+.ja_re_btn {
+	width: 140px;
+}
+
+.ja_re_slect_box {
+	margin: 20px 0 0;
+}
+
+.ja_re_slect_box > div {
+	display: flex;
+	margin: 0 -5px;
+}
+
+.ja_re_slect_arrow_box {
+	position: relative;
+}
+
+.ja_re_slect_inner {
+	margin: 0 5px;
+}
+
+.ja_re_slect {
+	color: #bdbdbd;
+	font-size: 15px;
+	border-radius: 4px;
+	padding-right: 30px;
+	transition: border-color .2s,box-shadow .2s,background-color .2s;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    line-height: 40px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    appearance:none
+}
+
+.ja_re_slect:hover {
+	background-color: #fafafa;
+}
+
+.ja_re_slect_size1 {
+	width: 245px;
+}
+
+.ja_re_slect_size2 {
+	width: 500px;
+}
+
+.ja_re_slect > option {
+	color: #424242;
+	min-height: 1.2em;
+	padding: 0px 2px 1px;
+	white-space: nowrap;
+}
+
+.ja_re_slect_arrow {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 5px;
+	font-size: 0;
+	color: rgba(0, 0, 0, .3);
+}
+
+/****************동의약관****************/
+.ja_review_agree_box {
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+
+.ja_review_agree_inner {
+	margin-bottom: 18px;
+}
+
+.ja_review_agree_inner:last-child {
+	margin-bottom: 0px;
+}
+
+.ja_all_check_box {
+	margin: 9px 0px;
+}
+
+.ja_all_check_inner {
+	font-size: 15px;
+}
+
+.ja_check_img {
+	height: 22px;
+	width: 22px;
+	border-radius: 4px;
+	background-color: #fff;
+	border: 1px solid #dbdbdb;
+	display: block;
+	transition: .2s ease;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.blue_check > div {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 20px;
+	color: rgb(47, 52, 56);
+	margin-left: 9px;
+}
+
+
+
+.blue_check > div > span {
+	color: rgb(9, 96,156);
+	font-weight: 700;
+}
+
+.ja_agree_hr {
+	border-top: 1px;
+	background-color: rgb(234, 237, 239);	
+}
+
+label.blue_check {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.content_l label.blue_check {
+	top: 0px;
+	left: 8px;
+}
+label.blue_check > input[type="checkbox"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+}
+label.blue_check > input[type="checkbox"]+span {
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1;
+    transition: color .1s,border-color .1s,background-color .1s;
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+}
+label.blue_check > input[type="checkbox"]:checked+span {
+	border-color: #35c5f0;
+    background-color: #35c5f0;
+    color: #fff;
+}
+
+.ja_agree {
+	margin: 9px 0px;
+}
+
+.ja_agree > div {
+	font-size: 15px;
+}
+
+.ja_agree_text_box {
+	position: relative;
+	padding: 12px;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	border-radius: 4px;
+}
+
+.ja_agree_text_inner {
+	height: 116px;
+	overflow-y: auto;
+}
+
+.ja_agree_text_inner > ol {
+	overflow: hidden;
+}
+
+.ja_agree_text_inner > ol > li {
+	font-size: 12px;
+	line-height: 16px;
+	color: rgb(130, 140, 148);
+	font-weight: 400;
+}
+
+.ja_con_review_submit > button {
+	display: block;
+	width: 100%;
+	margin: 30px 0 0;
+	padding: 11px 10px;
+	font-size: 17px;
+	line-height: 26px;
+	background-color: #35c5f0;
+	color: #fff;
+	border: 1px solid #35c5f0;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
