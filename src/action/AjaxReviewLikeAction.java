@@ -36,12 +36,12 @@ public class AjaxReviewLikeAction implements Action {
 		// response(json object)
 		// response data.result -> "DELETED", "INSERTED"
 		response.setCharacterEncoding("UTF-8");
-		response.setContentType("application/json"); // MIME 타입 //MIME : 전세계표준으로 여러가지가 정해져있음
+		response.setContentType("application/json");
 		PrintWriter out = response.getWriter(); 
-		JSONObject obj = new JSONObject(); // vo같은애,json에서 담아주면 자바스크립트에서 사용할수있음
+		JSONObject obj = new JSONObject(); 
 		obj.put("result",result );
 		
-		out.println(obj); // --> obj > obj.toString(); // JSON이 만들어져서 담아서 보내 어디로? ExAjax2.jsp에서 vo로!
+		out.println(obj); 
 
 	}
 
