@@ -36,7 +36,7 @@ public class MailSender {
 		auth = new Authenticator() {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("rkwkalrms777@naver.com", "alsgmlsmsaht34#$");
+				return new PasswordAuthentication("rkwkalrms777@naver.com", "???");
 			}
 		};
 	}
