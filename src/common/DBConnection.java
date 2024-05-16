@@ -6,10 +6,10 @@ import java.sql.DriverManager;
 public class DBConnection {
 	public static Connection getConnection() {
 		String driver = "oracle.jdbc.driver.OracleDriver";
-//	 	String url = "jdbc:oracle:thin:@localhost:1521:xe";
-	 	String url = "jdbc:oracle:thin:@203.245.41.49:1521:xe";
-	 	String dbId = "vincenzo";
-	 	String dbPw = "whddbs97chlrh";
+//	 	String url = "AAAA";
+	 	String url = "AAA";
+	 	String dbId = "vAAAAAAA";
+	 	String dbPw = "AAAAAAA";
 		
 		Connection conn = null;
 		
